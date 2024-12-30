@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University Review Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        
+    </video>
+    <div class="form-container">
+        
+        <h2>Chitkara University Review Form</h2>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="number" id="rollNumber" name="rollNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="groupSubgroup">Group and Subgroup:</label>
+                <select id="groupSubgroup" name="groupSubgroup" required>
+                    <option value="G1-A">G1 - A</option>
+                    <option value="G1-B">G1 - B</option>
+                    <option value="G2-A">G2 - A</option>
+                    <option value="G2-B">G2 - B</option>
+                    <option value="G3-A">G3 - A</option>
+                    <option value="G3-B">G3 - B</option>
+                    <option value="G4-A">G4 - A</option>
+                    <option value="G4-B">G4 - B</option>
+                    <option value="G5-A">G5 - A</option>
+                    <option value="G5-B">G5 - B</option>
+                    <option value="G6-A">G6 - A</option>
+                    <option value="G6-B">G6 - B</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number:</label>
+                <input type="number" id="contactNumber" name="contactNumber" required>
+            </div>
+
+            <div class="mentor-dean-row">
+                <div class="form-group">
+                    <label for="deanName">Dean Name:</label>
+                    <input type="text" id="deanName" name="deanName" required>
+                </div>
+                <div class="form-group">
+                    <label for="deanEmail">Dean Email Address:</label>
+                    <input type="email" id="deanEmail" name="deanEmail" required>
+                </div>
+            </div>
+            <div class="mentor-dean-row">
+                <div class="form-group">
+                    <label for="mentorName">Mentor Name:</label>
+                    <input type="text" id="mentorName" name="mentorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="mentorEmail">Mentor Email Address:</label>
+                    <input type="email" id="mentorEmail" name="mentorEmail" required>
+                </div>
+            </div>
+
+        
+            <button type="button" id="nextButton">Next</button>
+        </form>
+    </div>
+
+    <script>
+    
+        document.getElementById('nextButton').addEventListener('click', function() {
+        
+            const formData = {
+                fullName: document.getElementById('fullName').value.trim(),
+                rollNumber: document.getElementById('rollNumber').value.trim(),
+                groupSubgroup: document.getElementById('groupSubgroup').value.trim(),
+                email: document.getElementById('email').value.trim(),
+                contactNumber: document.getElementById('contactNumber').value.trim(),
+                deanName: document.getElementById('deanName').value.trim(),
+                deanEmail: document.getElementById('deanEmail').value.trim(),
+                mentorName: document.getElementById('mentorName').value.trim(),
+                mentorEmail: document.getElementById('mentorEmail').value.trim()
+            };
+
+            
+            for (let key in formData) {
+                if (!formData[key]) {
+                    alert(`${key} cannot be empty!`);
+                    return;
+                }
+            }
+
+
+            fetch('/save-review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+        
+                    window.location.href = 'page2.html';
+                } else {
+        
+                    alert('Error saving the form data');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form');
+            });
+        });
+    </script>
+</body>
+</html>

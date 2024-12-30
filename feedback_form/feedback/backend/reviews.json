@@ -1,0 +1,722 @@
+[
+  {
+    "fullName": "Hi",
+    "rollNumber": "123",
+    "groupSubgroup": "G1-A",
+    "email": "ram@gmail.com",
+    "contactNumber": "7439463655",
+    "deanName": "1s",
+    "deanEmail": "ran@gmail.com",
+    "mentorName": "asd",
+    "mentorEmail": "ran@gmail.com"
+  },
+  {
+    "fullName": "Shayan Hore",
+    "rollNumber": "213",
+    "groupSubgroup": "G1-A",
+    "email": "shayanhore1@gmail.com",
+    "contactNumber": "07439463606",
+    "deanName": "1s",
+    "deanEmail": "shayanhore3@gmail.com",
+    "mentorName": "asd",
+    "mentorEmail": "shayanhore1@gmail.com"
+  },
+  {
+    "fullName": "ayushi",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushi0055.be23@chitkara.edu.in",
+    "contactNumber": "9034617590",
+    "deanName": "ww",
+    "deanEmail": "ayushi0055.be23@chitkara.edu.in",
+    "mentorName": "ww",
+    "mentorEmail": "ayushi0055.be23@chitkara.edu.in"
+  },
+  {
+    "fullName": "ayushi",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushi0055.be23@chitkara.edu.in",
+    "contactNumber": "9034617590",
+    "deanName": "ww",
+    "deanEmail": "ayushi0055.be23@chitkara.edu.in",
+    "mentorName": "ww",
+    "mentorEmail": "ayushi0055.be23@chitkara.edu.in"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "3"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "2",
+    "semester": "4"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "5"
+  },
+  {
+    "dsa": "happy",
+    "java": "happy",
+    "iot": "sad",
+    "discrete": "happy",
+    "python": "happy"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "1",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "1",
+    "semester": "7"
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "1",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "hospitality",
+    "branchOrCourse": "hotelMgmt",
+    "year": "2",
+    "semester": "5"
+  },
+  {
+    "fullName": "ayushi",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushi0055.be23@chitkara.edu.in",
+    "contactNumber": "9034617590",
+    "deanName": "ww",
+    "deanEmail": "ayushi0055.be23@chitkara.edu.in",
+    "mentorName": "ww",
+    "mentorEmail": "ayushi0055.be23@chitkara.edu.in"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "1",
+    "semester": "4"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "sad"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "dsa": "happy",
+    "java": "sad",
+    "iot": "happy",
+    "discrete": "happy",
+    "python": "happy"
+  },
+  {
+    "fullName": "ayushi",
+    "rollNumber": "234",
+    "groupSubgroup": "G1-A",
+    "email": "ayushi0055.be23@chitkara.edu.in",
+    "contactNumber": "4567891234",
+    "deanName": "ww",
+    "deanEmail": "ayushi0055.be23@chitkara.edu.in",
+    "mentorName": "ww",
+    "mentorEmail": "ayushi0055.be23@chitkara.edu.in"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "2"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "fullName": "ayushi",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushi0055.be23@chitkara.edu.in",
+    "contactNumber": "9034617589",
+    "deanName": "ww",
+    "deanEmail": "ayushi0055.be23@chitkara.edu.in",
+    "mentorName": "ww",
+    "mentorEmail": "ayushi0055.be23@chitkara.edu.in"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "4"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "fullName": "Ayushi chopra",
+    "rollNumber": "11",
+    "groupSubgroup": "G1-A",
+    "email": "ayushichopra.02@gmail.com",
+    "contactNumber": "9034617590",
+    "deanName": "a",
+    "deanEmail": "ayushichopra.02@gmail.com",
+    "mentorName": "qq",
+    "mentorEmail": "ayushichopra.02@gmail.com"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "1",
+    "semester": "6"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "dsa": "happy",
+    "java": "happy",
+    "iot": "happy",
+    "discrete": "happy",
+    "python": "happy"
+  },
+  {
+    "fullName": "ARCHITA SETHI",
+    "rollNumber": "1",
+    "groupSubgroup": "G1-A",
+    "email": "SHIVANISETHI666@GMAIL.COM",
+    "contactNumber": "09815680084",
+    "deanName": "cvbn",
+    "deanEmail": "SHIVANISETHI666@GMAIL.COM",
+    "mentorName": "fghjk",
+    "mentorEmail": "SHIVANISETHI666@GMAIL.COM"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "3"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "dsa": "sad",
+    "java": "sad",
+    "iot": "sad",
+    "discrete": "sad",
+    "python": "sad"
+  },
+  {
+    "fullName": "ARCHITA SETHI",
+    "rollNumber": "2",
+    "groupSubgroup": "G1-A",
+    "email": "SHIVANISETHI666@GMAIL.COM",
+    "contactNumber": "09815680084",
+    "deanName": "DAGSHD",
+    "deanEmail": "SHIVANISETHI666@GMAIL.COM",
+    "mentorName": "DANS",
+    "mentorEmail": "SHIVANISETHI666@GMAIL.COM"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "2",
+    "semester": "4"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "dsa": "happy",
+    "java": "happy",
+    "iot": "happy",
+    "discrete": "happy",
+    "python": "happy"
+  },
+  {
+    "fullName": "ARCHITA SETHI",
+    "rollNumber": "1234",
+    "groupSubgroup": "G1-A",
+    "email": "SHIVANISETHI666@GMAIL.COM",
+    "contactNumber": "09815680084",
+    "deanName": "abc",
+    "deanEmail": "SHIVANISETHI666@GMAIL.COM",
+    "mentorName": "dvg",
+    "mentorEmail": "SHIVANISETHI666@GMAIL.COM"
+  },
+  {
+    "course": "business",
+    "branchOrCourse": "bba",
+    "year": "1",
+    "semester": "7"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "dsa": "happy",
+    "java": "happy",
+    "iot": "happy",
+    "discrete": "happy",
+    "python": "happy"
+  },
+  {
+    "fullName": "anki",
+    "rollNumber": "12234",
+    "groupSubgroup": "G2-A",
+    "email": "archita0040.be23@chitkara.edu.in",
+    "contactNumber": "9815680084",
+    "deanName": "ffh",
+    "deanEmail": "SHIVANISETHI666@GMAIL.COM",
+    "mentorName": "gthj",
+    "mentorEmail": "SHIVANISETHI666@GMAIL.COM"
+  },
+  {
+    "course": "engineering",
+    "branchOrCourse": "cse",
+    "year": "1",
+    "semester": "3"
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "happy"
+      },
+      {
+        "subject": "Python",
+        "rating": "happy"
+      }
+    ]
+  },
+  {
+    "reviews": [
+      {
+        "subject": "Data Structures and Algorithms (DSA)",
+        "rating": "happy"
+      },
+      {
+        "subject": "Java",
+        "rating": "happy"
+      },
+      {
+        "subject": "Internet of Things (IoT)",
+        "rating": "sad"
+      },
+      {
+        "subject": "Discrete Mathematics",
+        "rating": "sad"
+      },
+      {
+        "subject": "Python",
+        "rating": "sad"
+      }
+    ]
+  },
+  {
+    "dsa": "happy",
+    "java": "happy",
+    "iot": "happy",
+    "discrete": "happy",
+    "python": "happy"
+  }
+]

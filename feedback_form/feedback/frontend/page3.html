@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Review Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        
+    </video>
+
+    <div class="review-form">
+        <h2>Course Review Form</h2>
+
+        <div class="question">
+            <label for="question">How do you feel about the course content, assignments, and teaching behavior?</label>
+        </div>
+
+        <form id="review-form" action="page4.html" method="POST">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Happy 😊</th>
+                        <th>Sad 😞</th>
+                        <th>Fair 🤔</th>
+                        <th>Unsatisfied 😡</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- DSA -->
+                    <tr>
+                        <td>Data Structures and Algorithms (DSA)</td>
+                        <td>
+                            <input type="checkbox" id="dsa_happy" name="dsa" value="happy">
+                            <label class="checkbox-label" for="dsa_happy">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="dsa_sad" name="dsa" value="sad">
+                            <label class="checkbox-label" for="dsa_sad">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="dsa_fair" name="dsa" value="fair">
+                            <label class="checkbox-label" for="dsa_fair">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="dsa_unsatisfied" name="dsa" value="unsatisfied">
+                            <label class="checkbox-label" for="dsa_unsatisfied">✔</label>
+                        </td>
+                    </tr>
+
+                    <!-- Java -->
+                    <tr>
+                        <td>Java</td>
+                        <td>
+                            <input type="checkbox" id="java_happy" name="java" value="happy">
+                            <label class="checkbox-label" for="java_happy">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="java_sad" name="java" value="sad">
+                            <label class="checkbox-label" for="java_sad">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="java_fair" name="java" value="fair">
+                            <label class="checkbox-label" for="java_fair">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="java_unsatisfied" name="java" value="unsatisfied">
+                            <label class="checkbox-label" for="java_unsatisfied">✔</label>
+                        </td>
+                    </tr>
+
+                    <!-- IoT -->
+                    <tr>
+                        <td>Internet of Things (IoT)</td>
+                        <td>
+                            <input type="checkbox" id="iot_happy" name="iot" value="happy">
+                            <label class="checkbox-label" for="iot_happy">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="iot_sad" name="iot" value="sad">
+                            <label class="checkbox-label" for="iot_sad">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="iot_fair" name="iot" value="fair">
+                            <label class="checkbox-label" for="iot_fair">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="iot_unsatisfied" name="iot" value="unsatisfied">
+                            <label class="checkbox-label" for="iot_unsatisfied">✔</label>
+                        </td>
+                    </tr>
+
+                    <!-- Discrete Math -->
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td>
+                            <input type="checkbox" id="discrete_happy" name="discrete" value="happy">
+                            <label class="checkbox-label" for="discrete_happy">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="discrete_sad" name="discrete" value="sad">
+                            <label class="checkbox-label" for="discrete_sad">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="discrete_fair" name="discrete" value="fair">
+                            <label class="checkbox-label" for="discrete_fair">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="discrete_unsatisfied" name="discrete" value="unsatisfied">
+                            <label class="checkbox-label" for="discrete_unsatisfied">✔</label>
+                        </td>
+                    </tr>
+
+                    <!-- Python -->
+                    <tr>
+                        <td>Python</td>
+                        <td>
+                            <input type="checkbox" id="python_happy" name="python" value="happy">
+                            <label class="checkbox-label" for="python_happy">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="python_sad" name="python" value="sad">
+                            <label class="checkbox-label" for="python_sad">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="python_fair" name="python" value="fair">
+                            <label class="checkbox-label" for="python_fair">✔</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="python_unsatisfied" name="python" value="unsatisfied">
+                            <label class="checkbox-label" for="python_unsatisfied">✔</label>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <script>
+  
+      document.getElementById('review-form').addEventListener('submit', function (event) {
+          
+          event.preventDefault();
+  
+          let isValid = true; 
+          const rows = document.querySelectorAll('table tbody tr');
+          const formData = []; 
+  
+          rows.forEach(row => {
+              const checkboxes = row.querySelectorAll('input[type="checkbox"]');
+              const subject = row.querySelector('td').innerText.trim(); 
+              let selectedOption = null;
+  
+              checkboxes.forEach(checkbox => {
+                  if (checkbox.checked) {
+                      if (selectedOption) {
+                      
+                          isValid = false;
+                          alert(`Please select exactly one option for ${subject}.`);
+                      } else {
+                          selectedOption = checkbox.value;
+                      }
+                  }
+              });
+  
+              if (!selectedOption) {
+                  
+                  isValid = false;
+                  alert(`Please select exactly one option for ${subject}.`);
+              } else {
+          
+                  formData.push({
+                      subject: subject,
+                      rating: selectedOption,
+                  });
+              }
+          });
+  
+          
+          if (isValid) {
+              fetch('/save-review', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ reviews: formData }),
+              })
+                  .then(response => response.json())
+                  .then(data => {
+                      if (data.success) {
+                          
+                          window.location.href = 'page4.html';
+                      } else {
+                    
+                          alert('Error saving the form data.');
+                      }
+                  })
+                  .catch(error => {
+                      console.error('Error:', error);
+                      alert('An error occurred while submitting the form.');
+                  });
+          }
+      });
+  </script>
+  
+    
+    </body>
+</html>

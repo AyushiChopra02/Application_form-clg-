@@ -1,0 +1,123 @@
+/* General Reset */
+body, h2, label, select, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Montserrat", serif;
+  /* Cover the entire background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the video covers the whole background */
+  z-index: -1; /* Ensures the video stays in the background */
+}
+
+/* Form Container Styling */
+.form-container {
+  /* Semi-transparent white background */
+  padding: 25px 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin-top: 10%;
+  backdrop-filter: blur(10px); /* Apply blur effect to the background */
+  filter: none; /* No blur on the text and form elements */
+  opacity: 0.9; /* Make the background slightly opaque */
+  border: 1px solid #fff; /* White border */
+}
+
+/* Text Styling */
+h2 {
+  text-align: center;
+  color: #fcfdff;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Form Elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+select, input[type="radio"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #f9f9f935; /* Semi-transparent background */
+}
+
+select {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  width: auto;
+  display: inline-block;
+}
+
+.form-group input[type="radio"] {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Hidden Class for Dynamically Displayed Options */
+.hidden {
+  display: none;
+}
+
+/* Checkbox Group Styling */
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+
+.checkbox-group label {
+  margin-right: 15px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Review Form</title>
+    <link rel="stylesheet" href="style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        
+    </video>
+    <div class="review-form">
+        <h2>Course Review Form</h2>
+        <form id="review-form">
+            <p>Can a teacher help you in solving your doubts?</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Happy 😊</th>
+                        <th>Sad 😞</th>
+                        <th>Fair 🤔</th>
+                        <th>Unsatisfied 😡</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Subject Rows -->
+                    <tr>
+                        <td>Data Structures and Algorithms (DSA)</td>
+                        <td><input type="radio" name="dsa" value="happy"></td>
+                        <td><input type="radio" name="dsa" value="sad"></td>
+                        <td><input type="radio" name="dsa" value="fair"></td>
+                        <td><input type="radio" name="dsa" value="unsatisfied"></td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td><input type="radio" name="java" value="happy"></td>
+                        <td><input type="radio" name="java" value="sad"></td>
+                        <td><input type="radio" name="java" value="fair"></td>
+                        <td><input type="radio" name="java" value="unsatisfied"></td>
+                    </tr>
+                    <tr>
+                        <td>Internet of Things (IoT)</td>
+                        <td><input type="radio" name="iot" value="happy"></td>
+                        <td><input type="radio" name="iot" value="sad"></td>
+                        <td><input type="radio" name="iot" value="fair"></td>
+                        <td><input type="radio" name="iot" value="unsatisfied"></td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td><input type="radio" name="discrete" value="happy"></td>
+                        <td><input type="radio" name="discrete" value="sad"></td>
+                        <td><input type="radio" name="discrete" value="fair"></td>
+                        <td><input type="radio" name="discrete" value="unsatisfied"></td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td><input type="radio" name="python" value="happy"></td>
+                        <td><input type="radio" name="python" value="sad"></td>
+                        <td><input type="radio" name="python" value="fair"></td>
+                        <td><input type="radio" name="python" value="unsatisfied"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("review-form").addEventListener("submit", function(event) {
+            // Prevent the default form submission
+            event.preventDefault();
+
+            // Collect the form data
+            const formData = {
+                dsa: document.querySelector('input[name="dsa"]:checked')?.value || "",
+                java: document.querySelector('input[name="java"]:checked')?.value || "",
+                iot: document.querySelector('input[name="iot"]:checked')?.value || "",
+                discrete: document.querySelector('input[name="discrete"]:checked')?.value || "",
+                python: document.querySelector('input[name="python"]:checked')?.value || ""
+            };
+
+      
+            for (let key in formData) {
+                if (!formData[key]) {
+                  alert(`Please select an option for ${key.toUpperCase()}.`);
+
+                    return;
+                }
+            }
+
+        
+            fetch('http://localhost:3000/save-review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Review submitted successfully!');
+              
+                    window.location.href = '/submit-successful';
+                } else {
+                    alert('Failed to save review. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the review.');
+            });
+        });
+    </script>
+
+</body>
+</html>

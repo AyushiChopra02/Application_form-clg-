@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University Review Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="bg.mp4" type="video/mp4">
+        
+    </video>
+
+    <div class="form-container">
+        <h2>Chitkara University Review Form</h2>
+        
+        <form id="reviewForm">
+            
+            <div class="form-group">
+                <label for="course">Select a Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="engineering">Engineering</option>
+                    <option value="business">Business</option>
+                    <option value="hospitality">Hospitality</option>
+                    <option value="law">Law</option>
+                    <option value="design">Design</option>
+                    <option value="nursing">Nursing</option>
+                    <option value="journalism">Journalism</option>
+                </select>
+            </div>
+
+        
+            <div class="form-group hidden" id="engineering-options">
+                <label>Engineering Branches:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="branches" value="cse"> CSE</label>
+                    <label><input type="radio" name="branches" value="ece"> ECE</label>
+                    <label><input type="radio" name="branches" value="mech"> Mechanical</label>
+                    <label><input type="radio" name="branches" value="auto"> Automotive</label>
+                    <label><input type="radio" name="branches" value="mechatronics"> Mechatronics</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="business-options">
+                <label>Business Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="bba"> BBA</label>
+                    <label><input type="radio" name="courses" value="mba"> MBA</label>
+                    <label><input type="radio" name="courses" value="finance"> Finance</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="hospitality-options">
+                <label>Hospitality Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="hotelMgmt"> Hotel Management</label>
+                    <label><input type="radio" name="courses" value="tourism"> Tourism</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="law-options">
+                <label>Law Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="llb"> LLB</label>
+                    <label><input type="radio" name="courses" value="baLLB"> BA LLB</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="design-options">
+                <label>Design Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="bDes"> B.Des</label>
+                    <label><input type="radio" name="courses" value="mDes"> M.Des</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="nursing-options">
+                <label>Nursing Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="gnM"> GNM</label>
+                    <label><input type="radio" name="courses" value="bScN"> B.Sc Nursing</label>
+                </div>
+            </div>
+
+            <div class="form-group hidden" id="journalism-options">
+                <label>Journalism Courses:</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="courses" value="bJMC"> BJMC</label>
+                    <label><input type="radio" name="courses" value="mJMC"> MJMC</label>
+                </div>
+            </div>
+
+        
+            <div class="form-group">
+                <label>Which year are you in?</label>
+                <div class="checkbox-group">
+                    <label><input type="radio" name="year" value="1"> 1st Year</label>
+                    <label><input type="radio" name="year" value="2"> 2nd Year</label>
+                    <label><input type="radio" name="year" value="3"> 3rd Year</label>
+                    <label><input type="radio" name="year" value="4"> 4th Year</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="semester">Select Current Semester:</label>
+                <select id="semester" name="semester" required>
+                    <option value="">-- Select Semester --</option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                </select>
+            </div>
+
+            
+            <button type="button" id="nextPageBtn">Next</button>
+        </form>
+    </div>
+
+    <script>
+        const courseSelect = document.getElementById('course');
+        const engineeringOptions = document.getElementById('engineering-options');
+        const businessOptions = document.getElementById('business-options');
+        const hospitalityOptions = document.getElementById('hospitality-options');
+        const lawOptions = document.getElementById('law-options');
+        const designOptions = document.getElementById('design-options');
+        const nursingOptions = document.getElementById('nursing-options');
+        const journalismOptions = document.getElementById('journalism-options');
+        const nextPageBtn = document.getElementById('nextPageBtn');
+        const form = document.getElementById('reviewForm');
+    
+        
+        courseSelect.addEventListener('change', function () {
+            const selectedCourse = courseSelect.value;
+    
+        
+            [engineeringOptions, businessOptions, hospitalityOptions, lawOptions, designOptions, nursingOptions, journalismOptions].forEach(option => {
+                option.classList.add('hidden');
+            });
+    
+        
+            if (selectedCourse === 'engineering') {
+                engineeringOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'business') {
+                businessOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'hospitality') {
+                hospitalityOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'law') {
+                lawOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'design') {
+                designOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'nursing') {
+                nursingOptions.classList.remove('hidden');
+            } else if (selectedCourse === 'journalism') {
+                journalismOptions.classList.remove('hidden');
+            }
+        });
+        nextPageBtn.addEventListener('click', function (event) {
+            event.preventDefault(); 
+    
+            const selectedCourse = courseSelect.value;
+            const yearSelected = document.querySelector('input[name="year"]:checked');
+            const semesterSelected = document.getElementById('semester').value;
+            let courseBranchSelected = false;
+    
+    
+            if (!selectedCourse) {
+                alert('Please select a course.');
+                return;
+            }
+    
+            if (selectedCourse === 'engineering') {
+                courseBranchSelected = document.querySelector('input[name="branches"]:checked');
+            } else {
+                courseBranchSelected = document.querySelector('input[name="courses"]:checked');
+            }
+    
+            if (!courseBranchSelected) {
+                alert('Please select a course or branch.');
+                return;
+            }
+    
+            
+            if (!yearSelected) {
+                alert('Please select your year of study.');
+                return;
+            }
+    
+            if (!semesterSelected) {
+                alert('Please select your semester.');
+                return;
+            }
+    
+            const formData = {
+                course: selectedCourse,
+                branchOrCourse: courseBranchSelected.value, // Get the selected branch/course
+                year: yearSelected.value,
+                semester: semesterSelected,
+            };
+    
+            
+            fetch('/save-review', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+            
+                    window.location.href = 'page3.html';
+                } else {
+                    
+                    alert('Error saving the form data');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form');
+            });
+        });
+    </script>
+    
+</body>
+</html>
